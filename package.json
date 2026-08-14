@@ -1,6 +1,6 @@
 {
   "name": "file-encryption",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "本地文件加解密工具",
   "private": true,
   "author": {
@@ -35,10 +35,12 @@
     "pack:electron": "npm run build:electron && electron-builder --win --x64 --dir --publish never",
     "dist:electron": "npm run build:electron && electron-builder --win --x64 --publish never",
     "release": "node scripts/release.mjs",
+    "test": "npm run build:preload && tsx --test tests/*.test.ts",
     "typecheck": "npm run typecheck:app && npm run typecheck:preload && npm run typecheck:electron && npm run typecheck:node",
     "typecheck:app": "vue-tsc -p tsconfig.app.json --noEmit",
     "typecheck:preload": "tsc -p tsconfig.preload.json --noEmit",
     "typecheck:electron": "tsc -p tsconfig.electron.json --noEmit",
+    "typecheck:node": "tsc -p tsconfig.node.json --noEmit",
     "verify:artifacts": "node scripts/verify-artifacts.mjs",
     "preview": "vite preview"
   },
