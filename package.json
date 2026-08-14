@@ -1,6 +1,6 @@
 {
   "name": "file-encryption",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "本地文件加解密工具",
   "private": true,
   "author": {
