@@ -12,6 +12,7 @@ function run(command, args) {
 
 run('vite', ['build', '--outDir', 'dist/utools'])
 run('node', ['scripts/build-preload.mjs', '--out-dir', 'dist/utools/preload'])
+fs.unlinkSync(path.join(outputDirectory, 'electron-icon.png'))
 
 const preloadPackage = path.join(outputDirectory, 'preload/package.json')
 if (!fs.existsSync(preloadPackage)) {
