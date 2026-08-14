@@ -1,0 +1,31 @@
+/* Keep compatibility-sensitive styles independent from Tailwind CSS 4 output. */
+.fade-up-active {
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-up-hidden {
+  transform: translateY(-0.25rem);
+  opacity: 0;
+}
+
+.encryption-textarea-output .el-textarea__inner {
+  background-color: #fafbfc;
+}
+
+.password-input .el-input__inner {
+  font-family: Consolas, "Courier New", monospace;
+  line-height: normal;
+  padding-bottom: 2px;
+}
+
+.encryption-settings-dialog {
+  display: flex;
+  max-height: calc(100vh - 32px);
+  flex-direction: column;
+}
+
+.encryption-settings-dialog .el-dialog__body {
+  min-height: 0;
+  overflow-y: auto;
+}

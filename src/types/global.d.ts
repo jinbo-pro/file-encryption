@@ -1,0 +1,13 @@
+import type { PreloadServices } from '../../shared/preload-api'
+
+declare global {
+  interface Window {
+    services?: PreloadServices
+    runtime?: 'utools' | 'electron'
+    utools?: UToolsApi
+  }
+
+  const __APP_BUILD_TIME__: string
+}
+
+export {}

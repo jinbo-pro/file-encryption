@@ -1,0 +1,68 @@
+{
+  "name": "file-encryption",
+  "version": "1.0.0",
+  "description": "本地文件加解密工具",
+  "private": true,
+  "author": {
+    "name": "lijinbo",
+    "email": "lijinbode@foxmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "file-encryption",
+    "electron",
+    "utools",
+    "aes-gcm",
+    "x25519",
+    "scrypt",
+    "vue"
+  ],
+  "type": "module",
+  "main": "dist/electron/main/index.js",
+  "packageManager": "npm@10.9.3",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "electron-vite dev",
+    "dev:web": "vite",
+    "build": "npm run typecheck && npm run build:utools && npm run build:electron",
+    "build:preload": "node scripts/build-preload.mjs",
+    "build:web": "vite build",
+    "build:utools": "node scripts/build-utools.mjs",
+    "build:electron": "electron-vite build",
+    "pack:electron": "npm run build:electron && electron-builder --win --x64 --dir --publish never",
+    "dist:electron": "npm run build:electron && electron-builder --win --x64 --publish never",
+    "typecheck": "npm run typecheck:app && npm run typecheck:preload && npm run typecheck:electron && npm run typecheck:node",
+    "typecheck:app": "vue-tsc -p tsconfig.app.json --noEmit",
+    "typecheck:preload": "tsc -p tsconfig.preload.json --noEmit",
+    "typecheck:electron": "tsc -p tsconfig.electron.json --noEmit",
+    "verify:artifacts": "node scripts/verify-artifacts.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "element-plus": "^2.14.3",
+    "pinia": "^4.0.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^22.15.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "electron": "^37.2.6",
+    "electron-builder": "^26.0.12",
+    "electron-vite": "^4.0.0",
+    "esbuild": "^0.28.1",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.8",
+    "typescript": "^5.9.3",
+    "unplugin-auto-import": "^21.0.0",
+    "unplugin-vue-components": "^32.1.0",
+    "utools-api-types": "^7.5.1",
+    "vite": "^6.0.11",
+    "vue-tsc": "^3.3.9"
+  }
+}

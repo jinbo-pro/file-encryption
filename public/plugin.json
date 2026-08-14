@@ -1,0 +1,66 @@
+{
+  "main": "index.html",
+  "preload": "preload/index.js",
+  "logo": "logo.png",
+  "development": {
+    "main": "http://localhost:5173"
+  },
+  "features": [
+    {
+      "code": "file-encryption",
+      "explain": "文件加密与解密",
+      "cmds": [
+        "文件加密",
+        "加密文件",
+        "文件解密",
+        "解密文件"
+      ]
+    },
+    {
+      "code": "password-change",
+      "explain": "修改加密包密码",
+      "cmds": [
+        "修改加密密码",
+        "加密包改密",
+        "修改密码"
+      ]
+    },
+    {
+      "code": "text-encryption",
+      "explain": "文本加密与解密",
+      "cmds": [
+        "文本加密",
+        "加密文本",
+        "文本解密",
+        "解密文本"
+      ]
+    },
+    {
+      "code": "file-hash",
+      "explain": "计算文件 MD5、SHA-1 和 SHA-256 哈希",
+      "cmds": [
+        "文件哈希",
+        "文件校验",
+        "哈希校验"
+      ]
+    },
+    {
+      "code": "encryption-history",
+      "explain": "查看文件加密历史",
+      "cmds": [
+        "加密历史",
+        "文件加密历史"
+      ]
+    },
+    {
+      "code": "key-management",
+      "explain": "管理 X25519 公钥与私钥",
+      "cmds": [
+        "密钥管理",
+        "非对称密钥",
+        "公钥管理",
+        "私钥管理"
+      ]
+    }
+  ]
+}

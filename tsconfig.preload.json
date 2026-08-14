@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "useUnknownInCatchVariables": false,
+    "noEmit": true,
+    "verbatimModuleSyntax": true,
+    "types": ["node", "utools-api-types"],
+    "skipLibCheck": true
+  },
+  "include": ["preload/**/*.ts", "preload/**/*.d.ts", "shared/**/*.ts"]
+}

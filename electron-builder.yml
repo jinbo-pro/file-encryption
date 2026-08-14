@@ -1,0 +1,22 @@
+appId: com.lijinbo.file-encryption
+productName: 文件安全工具
+asar: true
+directories:
+  output: release
+files:
+  - dist/electron/**/*
+extraMetadata:
+  main: dist/electron/main/index.js
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: public/electron-icon.png
+  artifactName: FileEncryption-Setup-${version}.${ext}
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+  shortcutName: 文件安全工具
