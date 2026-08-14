@@ -52,28 +52,6 @@ const buildTime = __APP_BUILD_TIME__
     </div>
 
     <section class="pt-5">
-      <h3 class="m-0 text-sm font-semibold text-[#30353a]">开源共建</h3>
-      <p class="mt-2 text-[13px] leading-6 text-[#666d74]">
-        项目已开源，欢迎开发者参与完善功能、修复问题或改进体验。你可以提交
-        Issue、分享建议，也可以直接贡献代码，一起把它做得更安全、更好用。
-      </p>
-      <div class="mt-3 gap-x-5 gap-y-2 border-y border-[#e7e9ec] px-3 py-3">
-        <div>
-          <el-link href="https://github.com/jinbo-pro/file-encryption" target="_blank" rel="noopener noreferrer">
-            <Link class="size-4" />
-            GitHub：https://github.com/jinbo-pro/file-encryption
-          </el-link>
-        </div>
-        <div>
-          <el-link href="https://gitee.com/lijinbode/file-encryption" target="_blank" rel="noopener noreferrer">
-            <Link class="size-4" />
-            Gitee：https://gitee.com/lijinbode/file-encryption
-          </el-link>
-        </div>
-      </div>
-    </section>
-
-    <section class="pt-5">
       <h3 class="m-0 text-sm font-semibold text-[#30353a]">主要功能</h3>
       <div class="mt-3 grid border-y border-[#e7e9ec] min-[760px]:grid-cols-2">
         <div
@@ -143,6 +121,28 @@ const buildTime = __APP_BUILD_TIME__
         show-icon
       />
     </div>
+
+    <section class="pt-5">
+      <h3 class="m-0 text-sm font-semibold text-[#30353a]">开源共建</h3>
+      <p class="mt-2 text-[13px] leading-6 text-[#666d74]">
+        项目已开源，欢迎开发者参与完善功能、修复问题或改进体验。你可以提交
+        Issue、分享建议，也可以直接贡献代码，一起把它做得更安全、更好用。
+      </p>
+      <div class="mt-3 gap-x-5 gap-y-2 border-y border-[#e7e9ec] px-3 py-3">
+        <div>
+          <el-link href="https://github.com/jinbo-pro/file-encryption" target="_blank" rel="noopener noreferrer">
+            <Link class="size-4" />
+            GitHub：https://github.com/jinbo-pro/file-encryption
+          </el-link>
+        </div>
+        <div>
+          <el-link href="https://gitee.com/lijinbode/file-encryption" target="_blank" rel="noopener noreferrer">
+            <Link class="size-4" />
+            Gitee：https://gitee.com/lijinbode/file-encryption
+          </el-link>
+        </div>
+      </div>
+    </section>
 
     <footer class="mt-5 border-t border-[#eceef0] pt-4 text-center font-mono text-xs text-[#92979e]">
       {{ buildTime }}
