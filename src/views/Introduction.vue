@@ -141,6 +141,12 @@ const buildTime = __APP_BUILD_TIME__
             Gitee：https://gitee.com/lijinbode/file-encryption
           </el-link>
         </div>
+        <div>
+          <el-link href="https://github.com/jinbo-pro/file-encryption-tauri" target="_blank" rel="noopener noreferrer">
+            <Link class="size-4" />
+            tauri版本GitHub：https://github.com/jinbo-pro/file-encryption-tauri
+          </el-link>
+        </div>
       </div>
     </section>
 
